@@ -1,6 +1,5 @@
 from tkinter import Canvas, Tk, Button, Entry, Label, PhotoImage, messagebox
 import random
-import json
 
 # ---------------------------- GLOBALS ------------------------------- #
 BLANCO = "#FFFFFF"
@@ -122,7 +121,7 @@ entrada_website.config(borderwidth=2)
 
 
 entrada_usuario = Entry(width=33)
-entrada_usuario.insert(0,"YOUR_EMAIL@gmail.com")
+entrada_usuario.insert(0)
 entrada_usuario.grid(row=2, column=1)
 entrada_usuario.config(borderwidth=2)
 
