@@ -1,5 +1,6 @@
 from tkinter import Canvas, Tk, Button, Entry, Label, PhotoImage, messagebox
 import random
+import json
 
 # ---------------------------- GLOBALS ------------------------------- #
 BLANCO = "#FFFFFF"
