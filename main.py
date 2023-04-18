@@ -1,6 +1,7 @@
 from tkinter import Canvas, Tk, Button, Entry, Label, PhotoImage, messagebox
 import random
 import json
+import database as db
 
 # ---------------------------- GLOBALS ------------------------------- #
 BLANCO = "#FFFFFF"
@@ -32,6 +33,7 @@ def save_password():
     usuario = entrada_usuario.get()
     usuario_mayuscula = usuario.upper()
     passw = entrada_password.get()
+    db.add_user(pagina_mayuscula, usuario, passw)
     texto = {pagina_mayuscula:{
             "Usuario":usuario_mayuscula,
             "Password":passw
@@ -122,7 +124,7 @@ entrada_website.config(borderwidth=2)
 
 
 entrada_usuario = Entry(width=33)
-entrada_usuario.insert(0)
+entrada_usuario.insert(0," ")
 entrada_usuario.grid(row=2, column=1)
 entrada_usuario.config(borderwidth=2)
 
