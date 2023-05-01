@@ -1,0 +1,11 @@
+El proyecto es un administrador de cuentas, y el objetivo es guardar para cada persona que se registre,
+el nombre, la pagina en la que tiene una cuenta, su usuario y su contraseña para dicha pagina.
+
+Las funciones de la aplicacion son:
+    - Registrar el nombre(nombre real) del usuario en la base de datos.
+    - Agregar pagina web, username y password para dicha cuenta (si no tiene podra generarla automaticamente).
+    - Ver para cada usuario, las paginas en las que tiene cuenta y sus respectivos username y password.
+    - Editar el username y password para cada pagina.
+    - Eliminar cuenta (borrar pagina, username y password)
+    - Borrar usuario de la app (borrar todo).
+
